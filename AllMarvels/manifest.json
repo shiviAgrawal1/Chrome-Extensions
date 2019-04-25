@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Marvels",
+	"version": "1.0",
+
+	"web_accessible_resources":[
+                      "marvels/*.jpg"
+            ],
+	 
+	 "content_scripts":
+	 [
+         
+         {
+            "matches": 
+            [
+               "<all_urls>"
+            ],
+            "js": ["marvels.js"]
+
+            
+         }
+	 ]
+}
